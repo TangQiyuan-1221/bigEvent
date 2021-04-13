@@ -15,6 +15,7 @@ $(function () {
     });
 })
 
+// 获取用户信息并且渲染头像
 function getUserInfo() {
     $.ajax({
         method: 'GET',

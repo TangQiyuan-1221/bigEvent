@@ -13,7 +13,6 @@ $.ajaxPrefilter(function (options) {
         }
     }
 
-
     options.complete = function ({ responseJSON: { status, message } }) {
         // 在complete 回调函数中，可以使用res.responseJSON拿到服务器响应回来的数据
         if (status === 1 && message === '身份认证失败！') {
